@@ -1,0 +1,118 @@
+.navbar {
+    display: flex;
+    justify-content: center; /* Centers the navbar */
+    align-items: center;
+    padding: 1rem 2rem;
+    width: 80%; /* Sets the navbar width to 80% */
+    margin: 0 auto; /* Centers the navbar horizontally */
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .navbar-item a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.3rem 0.4rem;
+    font-size: 1.1rem; /* Increases the font size */
+    position: relative;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .navbar-item a:hover {
+    transform: translateY(-5px); /* Move up slightly */
+    color: #4e89ae; /* Change color to indicate hover state */
+  }
+  
+  .navbar-item a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: #4e89ae;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+  }
+  
+  .navbar-item a:hover::after {
+    width: 100%; /* Full underline on hover */
+  }
+  
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  .navbar-brand {
+    font-size: 1.4rem;
+    font-weight: bold;
+    background: linear-gradient(to left, #4e89ae, #000000);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+  }
+  
+  
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  /* Other styles remain the same */
+  
+  @media screen and (max-width: 600px) {
+    
+    .navbar {
+        justify-content: center; /* Centers the navbar items */
+        display: flex;
+        width: 90%; /* Navbar takes full width */
+        background: linear-gradient(to bottom, #4e89ae 0%, white 100%); /* Gradient from blue to white */
+      }
+    
+    .navbar-brand {
+      display: none;
+    }
+
+    .navbar-menu {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+        padding: 0; /* Reset default padding */
+        margin-right: 10px; /* Reset default margin */
+      }
+      
+
+      .navbar-item a {
+        text-decoration: none;
+        color: #333;
+        font-size: 1rem; /* Increases the font size */
+        position: relative;
+        transition: transform 0.3s ease, color 0.3s ease;
+        margin-right: 0px;
+      }
+
+      .navbar-item a::after {
+        display: none;
+        content: '';
+        display: block;
+        height: 0px;
+        width: 0;
+        background: #4e89ae;
+        transition: width 0.3s;
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+      }
+
+      
+
+  }

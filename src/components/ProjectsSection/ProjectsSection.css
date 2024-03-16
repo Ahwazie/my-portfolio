@@ -1,0 +1,111 @@
+.projects-container {
+    text-align: center;
+    padding: 4rem 0;
+    background-color: white; /* Light background color */
+  }
+  
+  .projects-subtitle {
+    font-size: 1.2rem;
+    color: #757575
+  }
+
+  .projects-title {
+    margin-top: -0.5rem;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+  }
+  
+  .projects-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .project-card {
+    background-color: #ffffff; /* White background for cards */
+    border-radius: 20px; /* Rounded corners for cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for cards */
+    padding: 1rem;
+    max-width: 250px; /* Fixed width for cards */
+    opacity: 0; /* Set initial opacity to 0 for the animation */
+    transform: translateY(20px); /* Start slightly off position */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .project-card.in-view {
+        opacity: 1; /* Set final opacity to 1 */
+        transform: translateY(0); /* Reset to original position */
+      }
+  
+  .project-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px; /* Rounded corners for images */
+  }
+  
+  .project-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+  }
+  
+  /* ... other styles ... */
+
+/* Scoped button styles for the project section only */
+.project-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px; /* Slightly rounded edges for buttons */
+    text-decoration: none;
+    color: #ffffff; /* White text for buttons */
+    background-color: #4e89ae; /* Bootstrap primary color for buttons */
+    transition: background-color 0.3s ease; /* Transition for button hover effect */
+  }
+  
+  .project-btn:hover {
+    background-color: #0056b3; /* Darken button color on hover */
+  }
+
+  /* ... existing styles ... */
+
+.projects-footer {
+    margin-top: 1rem; /* Space above the footer */
+    padding: 1rem;
+    text-align: center; /* Center the content */
+  }
+  
+  .github-link {
+    display: inline-flex; /* Aligns the logo and text inline */
+    align-items: center; /* Vertically centers logo with text */
+    gap: 10px; /* Space between logo and text */
+    text-decoration: none; /* Removes underline from the link */
+    color: #333; /* Dark color for the text */
+    font-weight: bold; /* Makes the text bold */
+  }
+  
+  .github-logo {
+    width: 24px; /* Adjust the logo size as needed */
+    height: auto;
+  }
+  
+  /* You may also want to add a hover effect */
+  .github-link:hover {
+    color: #4e89ae; /* Changes text color on hover */
+  }
+  
+  /* ... existing responsive styles ... */
+  
+  
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .projects-grid {
+      flex-direction: column;
+    }
+  
+    .project-card {
+      width: 80%; /* Adjust width for mobile */
+      margin: 1rem auto; /* Center cards on mobile */
+    }
+  }
+  

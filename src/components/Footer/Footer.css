@@ -1,0 +1,13 @@
+.footer {
+    background-color: #333; /* Dark grey background */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 1rem 0; /* Padding above and below the text */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.875rem;
+  }
+  
+  /* If you have a sticky footer, you might want to use position: relative; instead */
+  

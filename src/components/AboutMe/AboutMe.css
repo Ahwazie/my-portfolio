@@ -1,0 +1,87 @@
+.about-me-container {
+    text-align: center;
+    background-color: #f8f9fa; /* Light background for the whole section */
+    padding: 4rem 0; /* Ample padding around the section */
+    opacity: 0; /* Start with the section invisible */
+  transform: scale(0.9); /* Start the section slightly scaled down */
+  filter: blur(10px); /* Apply a blur effect */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out, filter 0.6s ease-out;
+  }
+
+  .about-me-container.in-view {
+    opacity: 1; /* Fade to fully visible */
+    transform: scale(1); /* Scale to normal size */
+    filter: blur(0); /* Remove the blur effect */
+  }
+  
+  .section-title {
+    color: #6c757d; /* Muted color for the subtitle */
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+  }
+  
+  .about-title {
+    margin: 0.5rem 0 2rem 0; /* Spacing around the title */
+    font-size: 2.5rem; /* Larger font size for title */
+  }
+  
+  .about-me-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem; /* Spacing below the cards */
+  }
+  
+  .info-card {
+    background-color: #ffffff; /* White background for the cards */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 250px; /* Fixed width */
+    padding: 2rem; /* Internal spacing */
+    margin: 0 1rem; /* Space between cards */
+  }
+  
+  .info-card h3 {
+    margin-bottom: 0.5rem;
+    color: #4e89ae; /* Color theme */
+  }
+  
+  .info-detail {
+    color: #495057; /* Darker color for the text */
+    font-weight: 300; /* Lighter font-weight */
+    margin-bottom: 0.5rem;
+  }
+  
+  .about-description {
+    color: #343a40; /* Dark color for paragraph text */
+    font-size: 1.1rem; /* Slightly larger font size for readability */
+    max-width: 60%; /* Max width for readability */
+    margin: 2rem auto; /* Centering paragraph and adding vertical spacing */
+    text-align: justify; /* Justify the text for a clean look */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* A more modern font-family */
+    line-height: 1.6; /* Increasing line height for better readability */
+  }
+
+  .about-heading {
+    margin-top: 2rem; /* Spacing above the heading */
+    color: #333;
+    font-size: 1.5rem; /* Slightly larger font for subheadings */
+    font-weight: normal; /* Keep the font-weight normal or bold if preferred */
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .about-me-content {
+      flex-direction: column;
+    }
+  
+    .info-card {
+      width: 70%; /* Adjust the width for smaller screens */
+      margin: 1rem 0; /* Stack with space between */
+    }
+  
+    .about-description {
+      max-width: 90%; /* Increase width for smaller screens */
+    }
+  }
+  
